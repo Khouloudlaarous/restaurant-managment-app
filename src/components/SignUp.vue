@@ -9,9 +9,10 @@
   </div>
 </template>
 <script>
+import axios from "axios";
 export default {
   name : 'SignUp',
-  date()
+  data()
   {
     return{
       name:'',
@@ -20,12 +21,24 @@ export default {
     }
   },
   methods:{
-    signUp()
+    async signUp()
     {
-      console.warn("signup",this.name,this.email,this.password)
-    }
+      let result = await axios.post("http://localhost:3000/users",{
+           name:this.name,
+           email:this.email,
+           password:this.password
+      });
+
+      console.warn(result);
+      if(result.status===201)
+      {
+        alert("you have successfully logged in");
+        localStorage.setItem("user-info",JSON.stringify(result.data))
+      }
   }
 }
+}
+
 </script>
 
 <style>

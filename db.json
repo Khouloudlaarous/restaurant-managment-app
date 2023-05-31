@@ -17,6 +17,12 @@
       "name": "alice.laarous",
       "password": "123@abc",
       "id": 3
+    },
+    {
+      "email": "med@test",
+      "name": "med.laarous",
+      "password": "123456@abc",
+      "id": 4
     }
   ]
 }
