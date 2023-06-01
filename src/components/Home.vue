@@ -1,17 +1,8 @@
 <template>
-  <router-view/>
+  <h1>Home Page</h1>
 </template>
-
-
-
 <script>
 export default {
-  name: 'App',
+  name:`Home`
 }
-
 </script>
-
-
-<style>
-
-</style>
