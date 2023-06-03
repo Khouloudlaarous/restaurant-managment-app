@@ -9,12 +9,12 @@
   </div>
 </template>
 <script>
-import axios from "axios";
+import axios from 'axios'
 export default {
   name : 'SignUp',
   data()
   {
-    return{
+    return {
       name:'',
       email:'',
       password:''
@@ -23,7 +23,7 @@ export default {
   methods:{
     async signUp()
     {
-      let result = await axios.post("http://localhost:3000/users",{
+      let result = await axios.post("http://localhost:3000/user",{
            name:this.name,
            email:this.email,
            password:this.password
@@ -33,6 +33,7 @@ export default {
       if(result.status===201)
       {
         localStorage.setItem("user-info",JSON.stringify(result.data))
+        this.$router.push({name:'Home'})
       }
   }
 }
