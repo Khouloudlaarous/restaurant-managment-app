@@ -95,6 +95,12 @@
       "email": "rihana@gmail.com",
       "password": "123rihana",
       "id": 16
+    },
+    {
+      "name": "fuck",
+      "email": "fuck@you",
+      "password": "fuckyouu123",
+      "id": 17
     }
   ]
 }
