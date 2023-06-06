@@ -4,7 +4,7 @@
   <div class="login">
     <input type="text" v-model="email" placeholder="Enter Email"/>
     <input type="password" v-model="password" placeholder="Enter Password"/>
-    <button>Login</button>
+    <button v-on:click="login">Login</button>
     <p>
       <router-link to="/Sign-Up" class="position">Sign Up</router-link>
     </p>
@@ -12,18 +12,33 @@
 </template>
 
 <script>
+
+import axios from 'axios'
 export default {
-   name: 'LoginPage'
+   name: 'LoginPage',
+   data()
+   {
+     return {
+       email: '',
+       password: ''
+     }
+   },
+  methods:{
+    async login()
+     {
+       let result = await axios.get(
+           `http://localhost:3000/user?email=${this.email}&password=${this.password}`
+       )
+       console.warn(result)
+      }
+  }
 }
 </script>
 
 <style>
 
-.register .position {
-  padding-left: 49%;
-}
-
-h1{
+.position {
   padding-left: 45%;
 }
+
 </style>
