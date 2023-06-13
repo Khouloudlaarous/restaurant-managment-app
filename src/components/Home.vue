@@ -1,6 +1,6 @@
 <template>
   <Header/>
-  <h1>Home Page</h1>
+  <h1 class="home">Home Page</h1>
 </template>
 <script>
 import Header from "@/components/Header.vue";
@@ -19,3 +19,9 @@ export default {
   // }
 }
 </script>
+<style>
+.home{
+  margin-left: 45%;
+  padding-top: 50px;
+}
+</style>

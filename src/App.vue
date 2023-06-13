@@ -21,7 +21,7 @@ export default {
 }
 
 .register button, .login button {
-  width: 320px;
+  width: 50px;
   height: 40px;
   display: block;
   margin-right: auto;

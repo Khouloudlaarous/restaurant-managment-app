@@ -1,9 +1,9 @@
 <template>
   <div class="nav">
-    <a href="#">Home</a>
-    <a href="#">Add restaurant</a>
-    <a href="#">Update restaurant</a>
-    <a href="#">Logout</a>
+    <a href="#" class="header-btn">Home<span></span></a>
+    <a href="#" class="header-btn">Add restaurant<span></span></a>
+    <a href="#" class="header-btn">Update restaurant<span></span></a>
+    <a href="#" class="header-btn">Logout<span></span></a>
   </div>
 </template>
 
@@ -15,11 +15,28 @@ export default {
 </script>
 <style>
 .nav {
-  background-color: darkolivegreen;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
   height: 50px;
 }
-.nav a {
-  float: left;
+
+.header-btn {
+  font-size: 1.1rem;
+  color: black;
+  text-decoration: none;
+  padding: 6px 20px;
+  margin-left: 15px;
+  border-radius: 15px;
+  border-bottom: 3px solid black;
 }
+
+.header-btn:hover {
+  color: darkgoldenrod;
+  transform: scale(1) translateY(0);
+  opacity: 1;
+  letter-spacing: 2px;
+}
+
 </style>
