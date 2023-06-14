@@ -1,5 +1,5 @@
 <template>
-  <img class="logo" src="../assets/logo.jpg"/>
+  <img class="logo" src="../assets/background.jpg"/>
   <h1 class="text-position">Sign Up</h1>
   <div class="register">
     <input type="text" v-model="name" placeholder="Enter Name"/>
@@ -69,7 +69,7 @@ export default {
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
-  border: 1px solid darkolivegreen;
+  background-color: #9e42f4;
 }
 
 .register button, .login button {
@@ -78,8 +78,8 @@ export default {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  border: 1px solid darkolivegreen;
-  background: darkolivegreen;
+  background-color: #9e42f4;
+  background-color: #9e42f4;
   color: white;
   cursor: pointer;
 }

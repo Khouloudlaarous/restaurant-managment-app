@@ -1,5 +1,7 @@
 <template>
   <router-view/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.google.com/specimen/Sarpanch?preview.text=LOGIN&preview.size=27&preview.text_type=custom" rel="stylesheet">
 </template>
 <script>
 export default {
