@@ -1,14 +1,62 @@
 <template>
-  <img class="logo" src="../assets/logo.jpg"/>
-  <h1 class="text-position">Sign Up</h1>
-  <div class="register">
-    <input type="text" v-model="name" placeholder="Enter Name"/>
-    <input type="text" v-model="email" placeholder="Enter Email"/>
-    <input type="password" v-model="password" placeholder="Enter Password"/>
-    <button v-on:click="signUp">Sign Up</button>
+  <div id="main">
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div id="img-container">
+      <div class="star">
+        <span></span>
+      </div>
+      <div class="star">
+        <span></span>
+      </div>
+      <div class="star">
+        <span></span>
+      </div>
+      <div class="star">
+        <span></span>
+      </div>
+      <div class="star">
+        <span></span>
+      </div>
+      <div class="star">
+        <span></span>
+      </div>
+      <div class="star">
+        <span></span>
+      </div>
+      <div class="static star-1"></div>
+      <div class="static star-2"></div>
+      <div class="static star-3"></div>
+      <div id="form-container">
+      </div>
+      <img id="img" src="../assets/background.jpg" alt="img" />
+    </div>
+    <div id="txt">
+      <p>User Login</p>
+      <div class="input-container">
+         <input type="text" v-model="name" placeholder="Enter Name"/>
+      </div>
+      <div class="input-container">
+         <input type="text" v-model="email" placeholder="Enter Email"/>
+      </div>
+      <div class="input-container">
+         <input type="password" v-model="password" placeholder="Enter Password"/>
+      </div>
+         <button v-on:click="signUp" type="submit">Sign Up</button>
     <p>
       <router-link to="/Login" class="position">Login</router-link>
     </p>
+  </div>
   </div>
 </template>
 <script>
@@ -53,13 +101,7 @@ export default {
 </script>
 
 <style>
-.logo {
-  width: 10%;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding-bottom: 100px;
-}
+
 
 .register input, .login input {
   width: 300px;
