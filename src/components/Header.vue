@@ -25,8 +25,13 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 50px;
-  height: 50px;
+  min-height: 80px;
+  height: 100px;
+  background-color: #a222ff;
+}
+
+.nav a {
+  padding-top: 80px;
 }
 
 .header-btn {
@@ -35,15 +40,13 @@ export default {
   text-decoration: none;
   padding: 6px 20px;
   margin-left: 15px;
-  border-radius: 15px;
-  border-bottom: 3px solid black;
 }
 
 .header-btn:hover {
-  color: darkgoldenrod;
+  color: white;
+  text-decoration: underline white;
   transform: scale(1) translateY(0);
   opacity: 1;
-  letter-spacing: 2px;
 }
 
 </style>

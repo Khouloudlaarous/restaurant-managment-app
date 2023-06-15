@@ -1,6 +1,7 @@
 <template>
   <Header/>
   <h1 class="home">Home Page</h1>
+  <img src="../assets/background.jpg">
 </template>
 <script>
 import Header from "@/components/Header.vue";
