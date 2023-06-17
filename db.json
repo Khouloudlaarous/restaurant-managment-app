@@ -113,6 +113,12 @@
       "email": "",
       "password": "",
       "id": 19
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 20
     }
   ],
   "restaurants": [
@@ -127,6 +133,42 @@
       "name": "WeldelHaj",
       "contact": 789101112,
       "address": "Menzah6"
+    },
+    {
+      "name": "KFC restaurant",
+      "address": "Menzah 6",
+      "contact": "123456789",
+      "id": 3
+    },
+    {
+      "name": "la seine",
+      "address": "menzah 6",
+      "contact": "978546321456",
+      "id": 4
+    },
+    {
+      "name": "la seine",
+      "address": "menzah 6",
+      "contact": "978546321456",
+      "id": 5
+    },
+    {
+      "name": "la seine",
+      "address": "menzah 6",
+      "contact": "978546321456",
+      "id": 6
+    },
+    {
+      "name": "",
+      "address": "",
+      "contact": "",
+      "id": 7
+    },
+    {
+      "name": "",
+      "address": "",
+      "contact": "",
+      "id": 8
     }
   ]
 }

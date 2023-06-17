@@ -1,6 +1,6 @@
 <template>
   <Header/>
-  <h1>Hello {{name}}, Welcome on our Page </h1>
+  <h1>Hello {{name}}, Welcome to our Page </h1>
   <table border="1">
     <tr v-for="item in restaurants" :key="item.id">
       <td>{{item.id}}</td>
@@ -16,7 +16,7 @@ export default {
   name:`Home`,
   data (){
     return {
-      name:'',
+      name:"",
       restaurants:[],
     }
   },

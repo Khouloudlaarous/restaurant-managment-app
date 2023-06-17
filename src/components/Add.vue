@@ -10,33 +10,37 @@
 </template>
 <script>
 import Header from "@/components/Header.vue";
+import axios from "axios";
 export default {
-  name:`Add`,
-  components:{
+  name: `Add`,
+  components: {
     Header
   },
-  data()
-  {
+  data() {
     return {
-      restaurants :{
-        name:'',
-        address:'',
-        contact:''
+      restaurants: {
+        name: '',
+        address: '',
+        contact: ''
       }
     }
   },
-  methods:{
-    addRestaurant()
-    {
+  methods: {
+    async addRestaurant() {
       console.warn(this.restaurants)
+      const result = await axios.post("http://localhost:3000/restaurants",
+          {
+            name: this.restaurants.name,
+            address: this.restaurants.address,
+            contact: this.restaurants.contact,
+          });
+      console.warn("result", result)
     }
   },
-  mounted()
-  {
-    let user= localStorage.getItem('user-info');
-    if(!user)
-    {
-      this.$router.push({name:'Add'})
+  mounted() {
+    let user = localStorage.getItem('user-info');
+    if (!user) {
+      this.$router.push({name: 'Add'})
     }
   }
 }
