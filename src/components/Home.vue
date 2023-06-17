@@ -1,6 +1,6 @@
 <template>
   <Header/>
-  <h1 class="home">Hello {{name}}, Welcome on our Page </h1>
+  <h1>Hello {{name}}, Welcome on our Page </h1>
   <table border="1">
     <tr v-for="item in restaurants" :key="item.id">
       <td>{{item.id}}</td>
@@ -17,7 +17,7 @@ export default {
   data (){
     return {
       name:'',
-      restaurants: [],
+      restaurants:[],
     }
   },
   components:{
@@ -38,8 +38,5 @@ export default {
 }
 </script>
 <style>
-.home{
-  margin-left: 45%;
-  padding-top: 50px;
-}
+
 </style>

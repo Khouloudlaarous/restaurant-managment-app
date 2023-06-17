@@ -410,7 +410,7 @@ span::before {
   font-size: 1.5em;
   margin-bottom: -6px;
 }
-#form {
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -419,13 +419,13 @@ span::before {
 }
 
 
-#register {
+register {
   position: absolute;
   color: white;
   transform: translate(-50%, -50%);
-  font-size: 18px;
+  font-size: 30px;
   text-decoration: none;
-  bottom: 1%;
+  bottom: 3%;
   left: 5rem;
 }
 
@@ -457,7 +457,7 @@ span::before {
   padding-left: 25px;
 }
 
-.container {
+container {
   position: relative;
   white-space: nowrap;
   font-size: 1.1em;

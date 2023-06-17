@@ -107,6 +107,12 @@
       "email": "",
       "password": "",
       "id": 18
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 19
     }
   ],
   "restaurants": [
@@ -114,13 +120,13 @@
       "id": 1,
       "name": "KFC",
       "contact": 123456,
-      "adress": "Rue al jarjani"
+      "address": "Rue al jarjani"
     },
     {
       "id": 2,
       "name": "WeldelHaj",
       "contact": 789101112,
-      "adress": "Menzah6"
+      "address": "Menzah6"
     }
   ]
 }

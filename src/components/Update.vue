@@ -1,6 +1,6 @@
 <template>
   <Header/>
-  <h1 class="home">Update restaurantsn Page</h1>
+  <h1>Update restaurantsn Page</h1>
 </template>
 <script>
 import Header from "@/components/Header.vue";
