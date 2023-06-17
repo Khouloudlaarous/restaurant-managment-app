@@ -119,6 +119,12 @@
       "email": "",
       "password": "",
       "id": 20
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 21
     }
   ],
   "restaurants": [
@@ -169,6 +175,12 @@
       "address": "",
       "contact": "",
       "id": 8
+    },
+    {
+      "name": "vfdwsv",
+      "address": "cswcd",
+      "contact": "142",
+      "id": 9
     }
   ]
 }
